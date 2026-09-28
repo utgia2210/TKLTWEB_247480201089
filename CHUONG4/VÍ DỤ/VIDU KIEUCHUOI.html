@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //charAt trả về kí tự tại vị trí chỉ mục index
+        var str = "javascript";
+        document.write(str.charAt(2));
+    </script>
+    <script>
+        //concat(str) nối 2 chuỗi
+        var s1= "Java";
+        var s2="Script";
+        var s3=s1.concat(s2);
+        document.write("<br>",s3);
+    </script>
+    <script>
+        //indexOf(str) trả về vị trí chỉ mục của chuỗi str
+        var s1= "JavaScript";
+        var n=s1.indexOf("Script");
+        document.write("<br>",n);
+    </script>
+    <script>
+        //lastIndexOf(str) trả về vị trí chỉ mục của chuỗi str
+        var s1= "Nguyen Huy";
+        var n= s1.lastIndexOf("uy");
+        document.write("<br>", n)
+    </script>
+    <script>
+        //toLowerCase() trả về chuôi chữ thường
+        var s1= "JavaScript";
+        var s2= s1.toLowerCase();
+        document.write("<br>", s2);
+    </script>
+    <script>
+        //toUpperCase() trả về chuỗi chữ hoa
+        var s1= "JavaScript";
+        var s2= s1.toUpperCase();
+        document.write("<br>", s2);
+    </script>
+    <script>
+        //slice trả về chuỗi con của chuỗi đã cho từ beginIndex cho đến endIndex
+        var s1= "JavaScript";
+        var s2= s1.slice(3, 5);
+        document.write("<br>", s2);
+    </script>
+    <script>
+        //trim trả về chuôi đã cắt bỏ những khoảng trắng ở đầu và cuối chuỗi đã cho
+        var s1= "      javascript trim      ";
+        var s2= s1.trim();
+        document.write("<br>", s2);
+    </script>
+</body>
+</html>
