@@ -6,22 +6,22 @@
 </head>
 <body>
     <?php
-        $servername = "localhost:8080";
+        $servername = "localhost";
         $database = "quanlybanhang1";
         $username ="root";
         $password = "";
         //create connection 
         $conn = mysqli_connect($servername, $username, $password, $database);
         //Thực hiện lệnh SELECT
-        $sql = "*SELECT * FROM khachhang";
+        $sql = "SELECT * FROM khachhang";
         if($result = mysqli_query($conn, $sql)){
             if(mysqli_num_rows($result)>0){
             while($row = mysqli_fetch_array($result)){
-                echo $row['makh'];
-                echo $row['tenkh'];
-                echo $row['namsinh'];
-                echo $row['dienthoai'];
-                echo $row['diachi'];
+                echo $row['makh']. "&nbsp";
+                echo $row['tenkh']. "&nbsp";
+                echo $row['namsinh']. "&nbsp";
+                echo $row['dienthoai']. "&nbsp";
+                echo $row['diachi']. "&nbsp" . "<br>";    
             }
         mysqli_free_result($result);
             }
